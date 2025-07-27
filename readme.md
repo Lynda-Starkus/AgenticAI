@@ -7,8 +7,6 @@ Avant la configuration complète, essayez d'abord d'installer Ollama pour voir d
 3. Exécutez `ollama run llama3.2` ou, pour des machines moins puissantes, essayez `ollama run llama3.2:1b`.  
    **Attention** : évitez le modèle le plus récent de Meta, `llama3.3`, car avec 70 milliards de paramètres, il est beaucoup trop lourd pour la plupart des ordinateurs domestiques !
 4. Si cela ne fonctionne pas, vous devrez peut-être lancer `ollama serve` dans un autre PowerShell (Windows) et réessayer l'étape 3.
-5. Si cela ne fonctionne toujours pas, j'ai prévu une version dans le cloud via Google Colab. Il vous faudra un compte Google, mais c'est gratuit :  
-   https://colab.research.google.com/drive/1-_f5XZPsChvfU1sJ0QqCePtIuc55LSdu?usp=sharing
 
 ## Instructions de configuration
 

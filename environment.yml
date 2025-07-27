@@ -1,0 +1,44 @@
+name: pstb_agentic
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - python-dotenv
+  - requests
+  - beautifulsoup4
+  - numpy
+  - pandas
+  - peft
+  - scipy
+  - google-generativeai
+  - jupyterlab
+  - ipywidgets
+  - pyarrow
+  - matplotlib
+  - scikit-learn
+  - tiktoken
+  - jupyter-dash
+  - plotly
+  - feedparser
+  - pip:
+    - transformers
+    - sentence-transformers
+    - datasets
+    - accelerate
+    - sentencepiece
+    - bitsandbytes
+    - openai
+    - anthropic
+    - google-generativeai
+    - gradio
+    - gensim
+    - modal
+    - chromadb
+    - ollama
+    - psutil
+    - setuptools
+    - speedtest-cli
+    - python-multipart
+    - litellm

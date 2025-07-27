@@ -16,16 +16,16 @@ Si cette Partie 1 vous pose des problèmes, vous pouvez utiliser l'alternative e
 2. **Configurer l'environnement :**
 
 * Ouvrez **Anaconda Prompt** (recherchez-le dans le menu Démarrer)
-* Naviguez vers le "répertoire racine du projet" en entrant par exemple : `cd C:\Users\VotreNom\Documents\Projects\agentic` en remplaçant par le chemin réel de votre projet agentic. Faites un `dir` et vérifiez que vous voyez les sous-dossiers pour chaque semaine du cours.
+* Naviguez vers le "répertoire racine du projet" en entrant par exemple : `cd C:\Users\VotreNom\Documents\Projects\pstb_agenticai` en remplaçant par le chemin réel de votre projet pstb_agenticai. Faites un `dir` et vérifiez que vous voyez les sous-dossiers pour chaque semaine du cours.
 * Créez l'environnement : `conda env create -f environment.yml`
 * Attendez quelques minutes pour que tous les packages soient installés - cela peut prendre 20-30 minutes si c'est votre première utilisation d'Anaconda, voire plus selon votre connexion internet. Si cela dure plus d'1h15 ou rencontre des problèmes, passez à la Partie 1B.
-* Vous avez maintenant un environnement dédié et isolé pour l'ingénierie des LLMs, l'utilisation de vector stores, et bien plus ! Activez-le avec cette commande : `conda activate agentic`
+* Vous avez maintenant un environnement dédié et isolé pour l'ingénierie des LLMs, l'utilisation de vector stores, et bien plus ! Activez-le avec cette commande : `conda activate pstb_agenticai`
 
-Vous devriez voir `(agentic)` dans votre invite de commande, signe que votre environnement est activé.
-
+Vous devriez voir `(pstb_agenticai)` dans votre invite de commande, signe que votre environnement est activé.
+(Après quand on aura besoin de pytorch, on l'installera à part.)
 3. **Lancer Jupyter Lab :**
 
-* Dans l'Anaconda Prompt, depuis le dossier `agentic`, tapez : `jupyter lab`
+* Dans l'Anaconda Prompt, depuis le dossier `pstb_agenticai`, tapez : `jupyter lab`
 
 ...et Jupyter Lab devrait s'ouvrir dans un navigateur. Si vous ne connaissez pas encore Jupyter Lab, je vous l'expliquerai bientôt ! Fermez l'onglet du navigateur et l'Anaconda Prompt, puis passez à la Partie 3.
 
@@ -41,14 +41,14 @@ Téléchargez Python ici :
 [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
 2. Naviguez vers le "répertoire racine du projet" :
-   `cd C:\Users\VotreNom\Documents\Projects\agentic`
+   `cd C:\Users\VotreNom\Documents\Projects\pstb_agenticai`
    Faites un `dir` pour vérifier que les sous-dossiers du cours apparaissent.
 
 Puis, créez un nouvel environnement virtuel avec :
-`python -m venv agentic`
+`python -m venv pstb_agenticai`
 
 3. Activez l'environnement virtuel avec :
-   `agentic\Scripts\activate`
+   `pstb_agenticai\Scripts\activate`
    Vous devriez voir (llms) dans l'invite de commande, signe que tout fonctionne.
 
 4. Exécutez : `pip install -r requirements.txt`
@@ -56,7 +56,7 @@ Puis, créez un nouvel environnement virtuel avec :
 
 5. **Lancer Jupyter Lab :**
 
-Depuis le dossier `agentic`, tapez : `jupyter lab`
+Depuis le dossier `pstb_agenticai`, tapez : `jupyter lab`
 ...et Jupyter Lab devrait s'ouvrir. Ouvrez le dossier `workshop` et double-cliquez sur `agent1.ipynb`. Succès ! Fermez Jupyter Lab et passez à la Partie 3.
 
 Si vous avez un souci, contactez-moi !
@@ -99,7 +99,7 @@ HF_TOKEN=xxxx
 
 Assurez-vous qu'il n'y a pas d'espace autour des `=` et pas d'espaces en fin de ligne.
 
-3. Fichier > Enregistrer sous. Choisissez "Tous les fichiers" comme type. Entrez **.env** comme nom, et sauvegardez-le dans le dossier `llm_engineering`.
+3. Fichier > Enregistrer sous. Choisissez "Tous les fichiers" comme type. Entrez **.env** comme nom, et sauvegardez-le dans la racine du dossier.
 
 4. Vérifiez dans l'explorateur que le fichier est bien nommé `.env` (et pas `.env.txt`) - renommez-le si nécessaire. Activez l'option "Afficher les extensions de fichiers" pour voir les vrais noms. Contactez-moi si ce n'est pas clair !
 
@@ -109,12 +109,12 @@ Ce fichier n'apparaîtra pas dans Jupyter Lab car les fichiers commençant par u
 
 * Ouvrez **Anaconda Prompt** si vous avez utilisé Anaconda, sinon ouvrez PowerShell si vous avez suivi la Partie 1B
 
-* Naviguez jusqu'au dossier `agentic` avec une commande comme : `cd C:\Users\VotreNom\Documents\Projects\agentic`
+* Naviguez jusqu'au dossier `pstb_agenticai` avec une commande comme : `cd C:\Users\VotreNom\Documents\Projects\pstb_agenticai`
 
-* Activez votre environnement avec `conda activate agentic` (ou `agentic\Scripts\activate` pour la Partie 1B)
+* Activez votre environnement avec `conda activate pstb_agenticai` (ou `pstb_agenticai\Scripts\activate` pour la Partie 1B)
 
-* Vous devriez voir `(agentic)` dans votre invite de commande, signe que tout va bien. Tapez ensuite : `jupyter lab` et Jupyter Lab s'ouvrira. Ouvrez le dossier `workshop` et double-cliquez sur `agent1.ipynb`.
+* Vous devriez voir `(pstb_agenticai)` dans votre invite de commande, signe que tout va bien. Tapez ensuite : `jupyter lab` et Jupyter Lab s'ouvrira. Ouvrez le dossier `workshop` et double-cliquez sur `agent1.ipynb`.
 
 Et c'est parti !
 
-Notez que chaque fois que vous voudrez relancer Jupyter Lab, vous devrez suivre ces instructions de la Partie 5 en partant du dossier `agentic` avec l'environnement `agentic` activé.
+Notez que chaque fois que vous voudrez relancer Jupyter Lab, vous devrez suivre ces instructions de la Partie 4 en partant du dossier `pstb_agenticai` avec l'environnement `pstb_agenticai` activé.
